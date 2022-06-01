@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from '../assets/img/pizza-logo.svg';
 
-export function Header({ price }) {
+function Header({ price }) {
 	return (
 		<div className='header'>
 			<div className='container'>
@@ -52,3 +52,5 @@ export function Header({ price }) {
 		</div>
 	);
 }
+
+export default Header;
