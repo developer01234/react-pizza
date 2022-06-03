@@ -2,7 +2,9 @@ import React from 'react';
 import './scss/app.scss';
 import Header from './components/Header';
 import Home from './pages/Home';
+import Cart from './pages/Cart';
 import NotFound from './pages/NotFound';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
 	return (
@@ -11,8 +13,11 @@ function App() {
 				<Header price={30000} />
 				<div className='content'>
 					<div className='container'>
-						<Home />
-						<NotFound />
+						<Routes>
+							<Route path='/' element={<Home />} />
+							<Route path='/cart' element={<Cart />} />
+							<Route path='*' element={<NotFound />} />
+						</Routes>
 					</div>
 				</div>
 			</div>
