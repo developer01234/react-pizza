@@ -5,11 +5,11 @@ function Sort({ value, onChangeSort }) {
 
 	const list = [
 		{ name: 'популярности (DESC)', sortProp: 'rating' },
-		{ name: 'популярности (ASC)', sortProp: 'rating' },
+		{ name: 'популярности (ASC)', sortProp: '-rating' },
 		{ name: 'цене (DESC)', sortProp: 'price' },
-		{ name: 'цене (ASC)', sortProp: 'price' },
+		{ name: 'цене (ASC)', sortProp: '-price' },
 		{ name: 'алфавиту (DESC)', sortProp: 'title' },
-		{ name: 'алфавиту (ASC)', sortProp: 'title' },
+		{ name: 'алфавиту (ASC)', sortProp: '-title' },
 	];
 
 	const onClickListItem = i => {

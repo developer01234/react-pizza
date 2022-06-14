@@ -7,6 +7,8 @@ import NotFound from './pages/NotFound';
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
+	const [] = React.useState('');
+
 	return (
 		<div className='App'>
 			<div className='wrapper'>
